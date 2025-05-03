@@ -2,12 +2,12 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Cta from '../Cta/Cta';
-import { ISession, ProjectFormInputs } from '@/types/index';
+import { ProjectFormInputs } from '@/types/index';
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 import { Upload } from 'lucide-react';
 
-function ProjectForm({ session }: { session: ISession | null }) {
+function ProjectForm() {
   const {
     register,
     handleSubmit,
@@ -31,7 +31,7 @@ function ProjectForm({ session }: { session: ISession | null }) {
         details: data.details,
         liveLink: data.liveLink,
         githubLink: data.githubLink,
-        authorEmail: session?.user?.email,
+        authorEmail: data?.email || 'mdrezaulkarrim@gmail.com',
         technologies: data.technologies.split(',').map((tech) => tech.trim()), // Convert string to array
       })
     );

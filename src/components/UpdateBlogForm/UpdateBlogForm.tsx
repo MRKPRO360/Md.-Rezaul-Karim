@@ -53,7 +53,7 @@ function UpdateBlogForm({ blogId }: { blogId: string }) {
       reset();
       if (blogInfo.success) {
         toast.success('Blog updated successfully', { id: toastId });
-        router.push('/dashboard/blog');
+        router.push('/dashboard/blogs');
       } else toast.error(blogInfo.message, { id: toastId });
     } catch (error) {
       console.error('Update failed:', error);

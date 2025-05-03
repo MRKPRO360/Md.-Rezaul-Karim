@@ -19,29 +19,30 @@ const experiences = [
 
   {
     year: '2020',
-    title: 'Tech Community Volunteer - Dev Meetups',
+    title: 'Assitant Teacher - Dhanikunda Nurani Madrasa',
     description:
-      'Organized coding bootcamps and mentored beginners in web development.',
+      'Provided interactive instruction in Bangla, English, and Math, helping students build strong foundational skills.',
   },
 ];
 
 const education = [
   {
-    year: '2018',
-    title: 'Bachelor’s Degree - ABC University',
+    year: '2024',
+    title: 'Bachelor’s Degree – National University',
     description:
-      "Completed a Bachelor's degree in Computer Science with a focus on web technologies.",
+      'Completed a Bachelor’s degree in Physics with a strong interest in problem-solving, logical reasoning, and scientific thinking.',
   },
   {
-    year: '2016',
-    title: 'Master’s Degree - XYZ University',
+    year: '2022',
+    title: 'Full-Stack Web Development – Self-Taught / Online Learning',
     description:
-      'Specialized in software engineering and full-stack development.',
+      'Completed several online courses and hands-on projects focused on MERN stack, web technologies, and software development best practices.',
   },
   {
-    year: '2014',
-    title: 'High School Diploma - ABC High School',
-    description: 'Graduated with a focus on computer science and mathematics.',
+    year: '2022',
+    title: 'Web Development Courses – Various Platforms',
+    description:
+      'Completed courses on platforms like Programmng Hero, Udemy, and YouTube covering JavaScript, React, Node.js, and database systems.',
   },
 ];
 
@@ -66,7 +67,7 @@ function Experience() {
             </ul>
           </div>
           {/* Education Section */}
-          <div>
+          <div className="mb-6 lg:mb-8">
             <h3 className="text-xl font-semibold mb-4 border-b-[3px] border-dotted border-gray-700 pb-2">
               Education
             </h3>

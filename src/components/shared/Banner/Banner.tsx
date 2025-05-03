@@ -10,6 +10,7 @@ import bg from '../../../assets/images/hero.jpg';
 import profile from '../../../assets/images/profile.jpg';
 import Cta from '../../Cta/Cta';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Banner() {
   return (
@@ -45,7 +46,9 @@ function Banner() {
             </p>
 
             <div className="flex items-center gap-5">
-              <Cta text="Contact Me" />
+              <Link href="/contact">
+                <Cta text="Contact Me" />
+              </Link>
               <div className="flex items-center gap-x-3 text-2xl text-textWhite">
                 <RiFacebookFill className="hover:text-textGreen transform hover:scale-125 transition duration-300 cursor-pointer" />
                 <RiLinkedinFill className="hover:text-textGreen transform hover:scale-125 transition duration-300 cursor-pointer" />

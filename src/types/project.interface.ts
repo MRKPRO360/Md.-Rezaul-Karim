@@ -4,6 +4,7 @@ export interface ProjectFormInputs {
   liveLink: string;
   githubLink: string;
   technologies: string;
+  email: string;
   coverImage: FileList;
   projectImages: FileList;
   type: 'frontend' | 'fullstack';

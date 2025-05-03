@@ -1,5 +1,5 @@
 'use client';
-import { BlogFormInput, ISession } from '@/types';
+import { BlogFormInput } from '@/types';
 import { useForm } from 'react-hook-form';
 import Cta from '../Cta/Cta';
 import { useState } from 'react';
@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 import { Upload } from 'lucide-react';
 
-function AddBlogForm({ session }: { session: ISession | null }) {
+function AddBlogForm() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const {
@@ -28,8 +28,8 @@ function AddBlogForm({ session }: { session: ISession | null }) {
         title: data.title,
         content: data.content,
         tag: data.tag,
-        author: session?.user?.name,
-        authorEmail: session?.user?.email,
+        author: data?.name || 'Md. Rezaul',
+        authorEmail: data?.email || 'mdrezaulkarrim@gmail.com',
       })
     );
 
@@ -73,7 +73,7 @@ function AddBlogForm({ session }: { session: ISession | null }) {
           <label className="block text-sm font-medium">Title</label>
           <input
             type="text"
-            {...register('title', { required: 'A title must have a title' })}
+            {...register('title', { required: 'A blog must have a title' })}
             className="border p-2 w-full rounded text-backgroundDark "
             placeholder="Blog title exmp. Node with code"
           />

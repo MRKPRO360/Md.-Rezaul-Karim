@@ -8,8 +8,8 @@ function ExperienceCard({
   return (
     <div>
       <li className="flex items-start gap-4">
-        <div className="lg:bg-textGreen w-6 md:h-6 rounded-full mt-2 flex items-center justify-center">
-          <FaCheck />
+        <div className="lg:bg-textGreen w-6 h-6 rounded-full mt-[9px] flex items-center justify-center">
+          <FaCheck className="text-2xl" />
         </div>
         <div className="space-y-1">
           <h4 className="text-lg font-semibold">{info.title}</h4>

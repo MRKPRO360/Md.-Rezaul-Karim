@@ -1,9 +1,7 @@
 import BlogPostCard from '@/components/Blog/BlogPostCard';
 import TextHeading from '@/components/TextHeading/TextHeading';
 import { IBlog } from '@/types';
-import { authOptions } from '@/utils/authOptions';
 import { Metadata } from 'next';
-import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -11,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 async function DashboardBlogPage() {
-  const session = await getServerSession(authOptions);
-
   const res = await fetch(
     'https://next-portfolio-server-bay.vercel.app/api/v1/blogs',
     {
@@ -29,9 +25,9 @@ async function DashboardBlogPage() {
       </div>
       <div className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {blogs?.data?.length ? (
-          blogs?.data
-            .filter((post: IBlog) => post.authorEmail === session?.user?.email)
-            .map((post: IBlog) => <BlogPostCard key={post._id} post={post} />)
+          blogs?.data?.map((post: IBlog) => (
+            <BlogPostCard key={post._id} post={post} />
+          ))
         ) : (
           <div className="font-semibold text-center text-lg">
             <span>You don&apos;t have any blogs.</span>{' '}

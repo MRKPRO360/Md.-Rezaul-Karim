@@ -25,11 +25,7 @@ async function BlogEditPage({
 }) {
   const { blogId } = await params;
 
-  return (
-    <div>
-      <UpdateBlogForm blogId={blogId} />
-    </div>
-  );
+  return <UpdateBlogForm blogId={blogId} />;
 }
 
 export default BlogEditPage;

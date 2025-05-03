@@ -14,13 +14,13 @@ function ProjectTabs({
   isPublic?: boolean;
 }) {
   const [activeTab, setActiveTab] = useState<'frontend' | 'fullstack'>(
-    'frontend'
+    'fullstack'
   );
 
   return (
     <div className="2xl:max-w-[1526px] mx-auto">
       <div className=" mb-6 border-b border-backgroundLight">
-        {['frontend', 'fullstack'].map((tab) => (
+        {['fullstack', 'frontend'].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab as 'frontend' | 'fullstack')}

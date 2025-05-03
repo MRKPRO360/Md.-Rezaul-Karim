@@ -34,24 +34,20 @@ function About() {
               />
             </div>
             <h5 className="md:leading-7 md:text-lg font-medium">
-              Working as volunteer in several projects based on MERN stack means{' '}
-              <span className="hidden md:inline">
-                {' '}
-                <br />{' '}
-              </span>{' '}
-              Full Stack Development
+              Building with passion, one project at a time.
             </h5>
           </div>
           <p className="leading-7 text-gray-100/75 mb-4 md:mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            eaque ex nulla! Inventore labore eos ipsa ea nihil pariatur officia
-            optio explicabo voluptatem reprehenderit. Exercitationem. Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Enim nostrum et
-            totam laborum velit! Veritatis iusto temporibus, hic atque qui
-            necessitatibus tenetur optio magnam blanditiis porro quaerat ab
+            I&apos;m a Full Stack Developer with hands-on experience in
+            volunteer projects using the MERN stack. I&apos;ve built responsive,
+            scalable web apps and gained solid skills in both frontend and
+            backend development. <br /> I enjoy turning ideas into real
+            applications, writing clean code, and constantly learning. Working
+            on community projects has helped me grow both technically and as a
+            team player.
           </p>
           <Cta
-            href="/doc/cv.pdf"
+            href="/doc/Md Rezaul Karim.pdf"
             download="Md.Rezaul Karim.pdf"
             text="Download CV"
           />

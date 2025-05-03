@@ -4,6 +4,8 @@ export interface BlogFormInput {
   blogImageData: FileList;
   tag: string;
   isDeleted?: boolean;
+  name?: string;
+  email?: string;
   author: string;
 }
 

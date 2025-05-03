@@ -10,19 +10,19 @@ function Features() {
       icon: <Monitor size={46} strokeWidth={1} />,
       text: 'Frontend Development',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nam non accusamus alias odio assumenda!',
+        'Building fast, responsive interfaces with Next.js, Tailwind CSS, and TypeScript.',
     },
     {
       icon: <PenTool size={46} strokeWidth={1} />,
       text: 'UI/UX Development',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nam non accusamus alias odio assumenda!',
+        'Creating clean, user-friendly designs with a focus on usability and consistency.',
     },
     {
       icon: <Database size={46} strokeWidth={1} />,
       text: 'Backend Development',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nam non accusamus alias odio assumenda!',
+        'Developing secure APIs and managing data using Node.js, Express, and MongoDB.',
     },
   ];
 
